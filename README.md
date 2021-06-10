@@ -1,21 +1,17 @@
 # Close-Price-Prediction-of-Nifty50-
-In this we will we dong a time series analysis of Nifty50 data set and will try to predict the closing price for next day,  
-#CHAPTER 1-  OBJECTIVES AND INTRODUCTION 
+ 
 
-1.1 OBJECTIVE : 
+
+## OBJECTIVE : 
 
 To perform time series analysis on the NIFTY stock price and forecasting using univariate ARIMA and ARIMAX modeling techniques. 
 We further simplified the problem  to  predict the direction of Close price  movements in the next N days.This is represented as a classification task where there are two possible outcomes (either the index went up in the next day or it went down).
-
-1.2 INTRODUCTION:
-
-1.2.1 NIFTY
  
 The Nifty 50 is a stock market index comprised of the shares of 50 of India's most well-diversified firms, covering various economic sectors such as financial services, engineering, pharmaceuticals, and information technology. The weighting of these 50 stocks is determined by their free float market capitalization.
 
 This is a time-series activity which we come across in our daily lives.
 
-1.2.2 Time Series
+## 
 
 Time series mean that a series of data points indexed in time order. The following are some of the most frequently asked questions: what will happen with our metrics in the next day/week/month/etc., how many users will instal our app, how much time will they spend online, how many actions will users complete, and so on. We can address these prediction tasks in a variety of ways, depending on the situation.
 
