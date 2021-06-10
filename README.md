@@ -23,6 +23,7 @@ This is a time-series activity which we come across in our daily lives.
 ## DATA Description
 
 The Data of Nifty50 is collected from the National Stock Exchange price website. https://www1.nseindia.com/products/content/equities/indices/historical_index_data.htm 
+
 One can also get the past 15 years of data from yahoo finance website https://in.finance.yahoo.com/quote/%5ENSEI/history/. 
 
 We colected the data for 20 years.
@@ -51,25 +52,26 @@ Close — Closing stock value.
 
 
 # Machine Learning Approach :
-*  ##Light GBM
+*  ## Light GBM
 
-   LightGBM (Light Gradient Boosting Machine) is a free and open source distributed gradient boosting platform for machine learning that was created by Microsoft. It is used for    ranking, classification, and other machine learning tasks and is based on decision tree algorithms. Quality and scalability are at the forefront of the production process.
+       LightGBM (Light Gradient Boosting Machine) is a free and open source distributed gradient boosting platform for machine learning that was created by Microsoft. It is used for    ranking, classification, and other machine learning tasks and is based on decision tree algorithms. Quality and scalability are at the forefront of the production process.
 
-   Trees are grown leaf-by-leaf by LightGBM (best-first). It will expand the leaf with the greatest delta loss. Leaf-wise algorithms have a lower loss than level-wise          algorithms when leaf is fixed.
+       Trees are grown leaf-by-leaf by LightGBM (best-first). It will expand the leaf with the greatest delta loss. Leaf-wise algorithms have a lower loss than level-wise          algorithms when leaf is fixed.
 
-When data is small, leaf-wise can trigger over-fitting, so LightGBM includes the max depth parameter to restrict tree depth. Even when max depth is defined, trees continue to grow leaf-wise.
+       When data is small, leaf-wise can trigger over-fitting, so LightGBM includes the max depth parameter to restrict tree depth. Even when max depth is defined, trees continue to grow leaf-wise.
 
-Resource : https://lightgbm.readthedocs.io/en/latest/Quick-Start.html 
-One can get complete documentation in the above link.
+       Resource : https://lightgbm.readthedocs.io/en/latest/Quick-Start.html 
+       
+       One can get complete documentation in the above link.
 
 
 
 * ## XG-Boost 
-XGBoost is a distributed gradient boosting library that has been optimised for performance, flexibility, and portability. It uses the Gradient Boosting paradigm to implement machine learning algorithms. XGBoost is a parallel tree boosting (also known as GBDT, GBM) algorithm that solves a variety of data science problems quickly and accurately.
+     XGBoost is a distributed gradient boosting library that has been optimised for performance, flexibility, and portability. It uses the Gradient Boosting paradigm to implement machine learning algorithms. XGBoost is a parallel tree boosting (also known as GBDT, GBM) algorithm that solves a variety of data science problems quickly and accurately.
 https://xgboost.readthedocs.io/en/latest/python/index.html
 
 
-Extreme Gradient Boosting (XGBoost) is just an extension of gradient boosting with the following added advantages:
+### Extreme Gradient Boosting (XGBoost) is just an extension of gradient boosting with the following added advantages:
 * Regularization: Standard GBM implementation has no regularization like XGBoost, therefore it also helps to reduce overfitting. In fact, XGBoost is also known as ‘regularized boosting‘ technique.
 * Parallel Processing: XGBoost implements parallel processing and is blazingly faster as compared to GBM. But hang on, we know that boosting is a sequential process so how can it be parallelized? We know that each tree can be built only after the previous one, but to make a tree it uses all the cores of the system. XGBoost also supports implementation on Hadoop.
 * High Flexibility: XGBoost allows users to define custom optimization objectives and evaluation criteria. This adds a whole new dimension to the model and there is no limit to what we can do.
