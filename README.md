@@ -54,15 +54,15 @@ Close — Closing stock value.
 # Machine Learning Approach :
 *  ## Light GBM
 
-       LightGBM (Light Gradient Boosting Machine) is a free and open source distributed gradient boosting platform for machine learning that was created by Microsoft. It is used for    ranking, classification, and other machine learning tasks and is based on decision tree algorithms. Quality and scalability are at the forefront of the production process.
+      LightGBM (Light Gradient Boosting Machine) is a free and open source distributed gradient boosting platform for machine learning that was created by Microsoft. It is used for    ranking, classification, and other machine learning tasks and is based on decision tree algorithms. Quality and scalability are at the forefront of the production process.
 
-       Trees are grown leaf-by-leaf by LightGBM (best-first). It will expand the leaf with the greatest delta loss. Leaf-wise algorithms have a lower loss than level-wise          algorithms when leaf is fixed.
+      Trees are grown leaf-by-leaf by LightGBM (best-first). It will expand the leaf with the greatest delta loss. Leaf-wise algorithms have a lower loss than level-wise          algorithms when leaf is fixed.
 
-       When data is small, leaf-wise can trigger over-fitting, so LightGBM includes the max depth parameter to restrict tree depth. Even when max depth is defined, trees continue to grow leaf-wise.
+      When data is small, leaf-wise can trigger over-fitting, so LightGBM includes the max depth parameter to restrict tree depth. Even when max depth is defined, trees continue to grow leaf-wise.
 
-       Resource : https://lightgbm.readthedocs.io/en/latest/Quick-Start.html 
+      Resource : https://lightgbm.readthedocs.io/en/latest/Quick-Start.html 
        
-       One can get complete documentation in the above link.
+      One can get complete documentation in the above link.
 
 
 
